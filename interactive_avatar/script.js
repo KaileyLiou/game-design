@@ -23,14 +23,20 @@ function draw() {
   ellipse(width/2, height/2, 175, 200);
 
   //Eyes
-  fill(255);
-  ellipse(170, 170, eyeWidth, eyeHeight);
-  ellipse(230, 170, eyeWidth, eyeHeight);
-
-  //Pupils
-  fill(0);
-  ellipse(170, 170, pupilWidth, pupilHeight);
-  ellipse(230, 170, pupilWidth, pupilHeight);
+  if (mouseIsPressed) {
+    // Eyes closed
+    fill(0);
+    ellipse(170, 170, eyeWidth, eyeHeight/8);
+    ellipse(230, 170, eyeWidth, eyeHeight/8);
+  } else {
+    // Eyes opened
+    fill(255);
+    ellipse(170, 170, eyeWidth, eyeHeight);
+    ellipse(230, 170, eyeWidth, eyeHeight);
+    fill(0);
+    ellipse(170, 170, pupilWidth, pupilHeight);
+    ellipse(230, 170, pupilWidth, pupilHeight);
+  }
 
   //Mouth
   fill(224, 122, 95);
@@ -41,4 +47,8 @@ function draw() {
   textSize(15);
   text('We will customize this \ntext later on in the \nproject to reflect your avatar.', 20, 20);
 
+  //Directions for mouse press
+  fill(0);
+  textSize(15);
+  text('Click to see \nme blink.', 300, 350);
 }

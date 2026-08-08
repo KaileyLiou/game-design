@@ -18,6 +18,12 @@ function draw() {
   angleMode(DEGREES);
   rectMode(CENTER);
 
+  // Hair
+  fill(0);
+  rect(117, 250, 45, 155);
+  rect(283, 250, 45, 155);
+  arc(200, 180, 210, 180, 180, 360); 
+
   //Face
   fill(253, 242, 230);
   ellipse(width/2, height/2, 175, 200);
@@ -42,10 +48,14 @@ function draw() {
   fill(224, 122, 95);
   arc(200, 230, 50, 50, 0, 180);
 
+  //Nose
+  fill(253, 242, 230);
+  triangle(200, 190, 190, 210, 210, 210);
+
   //Text
   fill(0);
   textSize(15);
-  text('We will customize this \ntext later on in the \nproject to reflect your avatar.', 20, 20);
+  text('"Why fit in when you were \nborn to stand out?" \n- Dr. Seuss', 20, 20);
 
   //Directions for mouse press
   fill(0);

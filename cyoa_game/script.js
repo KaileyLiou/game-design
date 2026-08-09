@@ -28,6 +28,8 @@ function setup() {
   enterButton = new Sprite(width / 2, height / 2 + 100);
   a1Button = new Sprite(-200, -200);
   a2Button = new Sprite(-50, -50);
+  b1Button = new Sprite(-100, -100);
+  b2Button = new Sprite(-150, -150);
 }
 
 /* DRAW LOOP REPEATS */
@@ -68,6 +70,27 @@ function draw() {
   if(screen == 1) {
     if(a1Button.mouse.presses()) {
       print("Display screen 2");
+      background("palegreen");
+      text("Welcome to screen 2. Make your second choice.", width/2, height/2 - 100);
+      a1Button.pos = { x: -200, y: -200 };
+      a2Button.pos = { x: -50, y: -50 };
+
+      // Add B1 button
+      b1Button.pos = { x: width / 2 - 50, y: height / 2 + 100 };
+      b1Button.w = 50;
+      b1Button.h = 50;
+      b1Button.collider = "k";
+      b1Button.color = "plum";
+      b1Button.text = "B1";
+
+      // Add B2 button
+      b2Button.pos = { x: width / 2 + 50, y: height / 2 + 100 };
+      b2Button.w = 50;
+      b2Button.h = 50;
+      b2Button.collider = "k";
+      b2Button.color = "plum";
+      b2Button.text = "B2";
+
       screen = 2;
     } else if(a2Button.mouse.presses()) {
       print("Display screen 5");

@@ -109,6 +109,20 @@ function showScreen2() {
   b2Button.text = "B2";
 }
 
+function showScreens3() {
+  background("lavender");
+  text("You hit an end point at Screen 3.", width/2, height/2 - 100);
+  b1Button.pos = { x: -200, y: -200 };
+  b2Button.pos = { x: -50, y: -50 };
+}
+
+function showScreen4() {
+  background("plum");
+  text("You hit an end point at Screen 4.", width/2, height/2 - 100);
+  b1Button.pos = { x: -200, y: -200 };
+  b2Button.pos = { x: -50, y: -50 };
+}
+
 function showScreen5() {
   background("lightgreen");
   text("You hit an end point at Screen 5.", width/2, height/2 - 100);

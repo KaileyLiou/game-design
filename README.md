@@ -14,9 +14,9 @@ This repository contains the projects I completed as part of the Girls Who Code 
 
 | Project | Description |
 | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| **[Collection Game](YOUR-LINK)** | Created a game where players collect falling boba pearls into their bubble tea cup. |
-| **[Choose Your Own Adventure](YOUR-LINK)** | Designed an interactive story where players make choices that lead to different paths and endings centered on a cybersecurity hack. |
-| **[Interactive Avatar](YOUR-LINK)** | Built an interactive avatar using basic p5.js shapes. |
+| **[Collection Game](https://kaileyliou.github.io/game-design/collection_game/)** | Created a game where players collect falling boba pearls into their bubble tea cup. |
+| **[Choose Your Own Adventure](https://kaileyliou.github.io/game-design/cyoa_game/)** | Designed an interactive story where players make choices that lead to different paths and endings centered on a cybersecurity hack. |
+| **[Interactive Avatar](https://kaileyliou.github.io/game-design/interactive_avatar)** | Built an interactive avatar using basic p5.js shapes. |
 
 ## Skills & Technologies
 

@@ -1,5 +1,6 @@
 /* SPRITES */
 let sprite; // Store sprite object
+let mover;
 
 function setup() {
   createCanvas(400, 400);
@@ -15,7 +16,7 @@ function setup() {
   floor.collider = 'static';
   floor.color = 'gray';
 
-  let mover = new Sprite(200, 345, 100, 20);
+  mover = new Sprite(200, 345, 100, 20);
   mover.collider = 'kinematic';
   mover.color = 'purple';
 }

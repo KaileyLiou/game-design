@@ -18,14 +18,15 @@ function setup() {
 
   // Set up the home screen
   background("pink");
-  text(
-    "Welcome to screen 0. This is the home screen.",
-    width / 2,
-    height / 2 - 100
-  );
+  textSize(18);
+  text("You're working late on your computer when a strange pop-up appears:", width / 2, height / 2 - 100);
+  textSize(20);
+  text("⚠ SYSTEM ERROR\nUnauthorized user detected.\nWould you like to investigate?\n\n", width / 2, height / 2 - 50);
+  textSize(18);
+  text("You click YES… \nand suddenly your entire computer starts acting strangely.", width / 2, height / 2 + 50);
 
   // Create buttons for all screens
-  enterButton = new Sprite(width / 2, height / 2 + 100);
+  enterButton = new Sprite(width / 2, height / 2 + 130);
   a1Button = new Sprite(-200, -200);
   a2Button = new Sprite(-50, -50);
   b1Button = new Sprite(-100, -100);
@@ -57,6 +58,14 @@ function draw() {
       print("Display screen 5");
       showScreen5();
       screen = 5;
+    }
+  } else if(screen == 2) {
+    if(b1Button.mouse.presses()) {
+      showScreens3();
+      screen = 3;
+    } else if(b2Button.mouse.presses()) {
+      showScreen4();
+      screen = 4;
     }
   }
 

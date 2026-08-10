@@ -2,6 +2,7 @@
 
 /* VARIABLES */
 let catcher, fallingObject;
+let score = 0;
 
 /* PRELOAD LOADS FILES */
 function preload(){
@@ -13,7 +14,7 @@ function setup() {
   createCanvas(400,400);
   
   //Create catcher 
-  catcher = new Sprite(200,380,100,20);
+  catcher = new Sprite(200,380,100,20, "k");
   catcher.color = color(95,158,160);
   
   //Create falling object
@@ -54,4 +55,17 @@ function draw() {
     catcher.x = 350;
   }
 
+  // If fallingObject collides with catcher, move back to random position at top
+  if(fallingObject.collides(catcher)) {
+    fallingObject.y = 0;
+    fallingObject.x = random(width);
+    fallingObject.vel.y = random(1, 5);
+    fallingObject.direction = "down";
+    score = score + 1;
+  }
+
+  // Draw the score to screen
+  fill(0, 128, 128);
+  textSize(25);
+  text("Score = " + score, 15, 35);
 }

@@ -4,22 +4,31 @@
 let catcher, fallingObject;
 let score = 0;
 let backgroundImg;
+let catcherImg;
+let fallingObjectImg;
 
 /* PRELOAD LOADS FILES */
 function preload(){
-  backgroundImg = loadImage("assets/boba2.png");
+  backgroundImg = loadImage("assets/boba1.png");
+  catcherImg = loadImage("assets/boba2.png");
+  fallingObjectImg = loadImage("assets/pearl.png");
 }
 
 /* SETUP RUNS ONCE */
 function setup() {
   createCanvas(400,400);
+
+  // Resize images
+  backgroundImg.resize(100,0);
+  catcherImg.resize(80,0);
+  fallingObjectImg.resize(20,0);
   
   //Create catcher 
-  catcher = new Sprite(200,380,100,20, "k");
+  catcher = new Sprite(catcherImg, 200,360,100,20, "k");
   catcher.color = color(95,158,160);
   
   //Create falling object
-  fallingObject = new Sprite(100,0,10);
+  fallingObject = new Sprite(fallingObjectImg, 100,0,10);
   fallingObject.color = color(0,128,128);
   fallingObject.vel.y = 2;
 }
@@ -27,6 +36,9 @@ function setup() {
 /* DRAW LOOP REPEATS */
 function draw() {
   background(224,224,224);
+
+  // Draw background image
+  image(backgroundImg, width - 110, height - 300);
   
   // Draw directions to screen
   fill(0);

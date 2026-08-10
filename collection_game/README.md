@@ -21,7 +21,9 @@ You can extend your project further by:
 
 ###  Attributions
 *If you used any code, ideas, images, or resources from another person or group of people, tell us about it here. Make sure it is in the public domain, has a license that allows you to use it, or is one of your own.
-- Add here if applicable
+- Boba 1 Image: https://pixabay.com/illustrations/boba-tea-milk-milkshake-cookies-8089109/
+- Boba 2 Image: https://pixabay.com/vectors/ai-generated-boba-milk-tea-8152415/
+- Boba Pearl Image: https://pixabay.com/vectors/circle-round-brown-bronze-38648/
 
 ---
 

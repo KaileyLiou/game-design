@@ -3,10 +3,11 @@
 /* VARIABLES */
 let catcher, fallingObject;
 let score = 0;
+let backgroundImg;
 
 /* PRELOAD LOADS FILES */
 function preload(){
-  
+  backgroundImg = loadImage("assets/boba2.png");
 }
 
 /* SETUP RUNS ONCE */

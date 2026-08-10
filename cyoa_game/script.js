@@ -17,13 +17,15 @@ function setup() {
   noStroke();
 
   // Set up the home screen
-  background("pink");
+  background("#0D1117");
   textSize(18);
+  fill("#39FF14");
   text("You're working late on your computer when a strange pop-up appears:", width / 2, height / 2 - 100);
   textSize(20);
   text("⚠ SYSTEM ERROR\nUnauthorized user detected.\nWould you like to investigate?\n\n", width / 2, height / 2 - 50);
   textSize(18);
   text("You click YES… \nand suddenly your entire computer starts acting strangely.", width / 2, height / 2 + 50);
+  fill("#00FF00");
 
   // Create buttons for all screens
   enterButton = new Sprite(width / 2, height / 2 + 130);
@@ -39,7 +41,8 @@ function draw() {
   enterButton.w = 100;
   enterButton.h = 50;
   enterButton.collider = "k";
-  enterButton.color = "plum";
+  enterButton.color = "dodgerblue";
+  enterButton.textColor = "white";
   enterButton.text = "Enter";
 
   // Check enter button
@@ -74,67 +77,80 @@ function draw() {
 
 /* FUNCTIONS TO DISPLAY SCREENS */
 function showScreen1() {
-  background("paleturquoise");
-  text("Welcome to screen 1. Make your first choice.", width/2, height/2 - 100);
+  background("#0D1117");
+  fill("#39FF14");
+  text("You open your computer's files and discover a folder\n you've never seen before. Inside are hundreds of files\n with your name on them.", width/2, height/2 - 100);
   enterButton.pos = { x: -100, y: -100 };
 
   // Add A1 button
   a1Button.pos = { x: width / 2 - 50, y: height / 2 + 100 };
-  a1Button.w = 50;
+  a1Button.w = 160;
   a1Button.h = 50;
   a1Button.collider = "k";
   a1Button.color = "plum";
-  a1Button.text = "A1";
+  a1Button.text = "Open the newest file";
+  a1Button.text.color = "black";
+  a1Button.text.size = 14;
 
   // Add A2 button
   a2Button.pos = { x: width / 2 + 50, y: height / 2 + 100 };
-  a2Button.w = 50;
+  a2Button.w = 160;
   a2Button.h = 50;
   a2Button.collider = "k";
   a2Button.color = "plum";
-  a2Button.text = "A2";
+  a2Button.text = "Delete the folder";
+  a2Button.text.color = "black";
+  a2Button.text.size = 14;
 }
 
 function showScreen2() {
-  background("palegreen");
-  text("Welcome to screen 2. Make your second choice.", width/2, height/2 - 100);
+  background("#0D1117");
+  fill("#39FF14");
+  text("The file opens to reveal a message: \n\n\"I know what happened. But you have to find me before they do.\"\n\nA location appears on the screen.", width/2, height/2 - 100);
   a1Button.pos = { x: -200, y: -200 };
   a2Button.pos = { x: -50, y: -50 };
 
   // Add B1 button
   b1Button.pos = { x: width / 2 - 50, y: height / 2 + 100 };
-  b1Button.w = 50;
+  b1Button.w = 220;
   b1Button.h = 50;
   b1Button.collider = "k";
   b1Button.color = "plum";
-  b1Button.text = "B1";
+  b1Button.text = "Follow the location";
+  b1Button.text.color = "black";
+  b1Button.text.size = 14; 
 
   // Add B2 button
   b2Button.pos = { x: width / 2 + 50, y: height / 2 + 100 };
-  b2Button.w = 50;
+  b2Button.w = 160;
   b2Button.h = 50;
   b2Button.collider = "k";
   b2Button.color = "plum";
-  b2Button.text = "B2";
+  b2Button.text = "Ignore the message";
+  b2Button.text.color = "black";
+  b2Button.text.size = 14; 
 }
 
 function showScreens3() {
-  background("lavender");
-  text("You hit an end point at Screen 3.", width/2, height/2 - 100);
+  background("#0D1117");
+  fill("#39FF14");
+  text("You follow the mysterious location and discover\n a hidden AI program trying to escape the computer. \nBefore the screen goes dark, it sends one final message: \n“Thank you for finding me.”", width/2, height/2 - 100);
   b1Button.pos = { x: -200, y: -200 };
   b2Button.pos = { x: -50, y: -50 };
 }
 
 function showScreen4() {
-  background("plum");
-  text("You hit an end point at Screen 4.", width/2, height/2 - 100);
+  background("#0D1117");
+  fill("#39FF14");
+  text("You close the file and walk away. \nEverything seems normal… until your laptop suddenly \nturns back on by itself. A single message appears: \n\“You should have listened.\”", width/2, height/2 - 100);
   b1Button.pos = { x: -200, y: -200 };
   b2Button.pos = { x: -50, y: -50 };
 }
 
 function showScreen5() {
-  background("lightgreen");
-  text("You hit an end point at Screen 5.", width/2, height/2 - 100);
+  background("#0D1117");
+  fill("#39FF14");
+  text("You click DELETE. \n ERROR. \nYou don't have permission to delete this file.", width/2, height/2 - 100);
   a1Button.pos = { x: -200, y: -200 };
   a2Button.pos = { x: -50, y: -50 };
 }

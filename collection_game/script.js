@@ -24,13 +24,14 @@ function setup() {
   fallingObjectImg.resize(20,0);
   
   //Create catcher 
-  catcher = new Sprite(catcherImg, 200,360,100,20, "k");
+  catcher = new Sprite(catcherImg, 200,360, "k");
   catcher.color = color(95,158,160);
   
   //Create falling object
-  fallingObject = new Sprite(fallingObjectImg, 100,0,10);
+  fallingObject = new Sprite(fallingObjectImg, 100,0);
   fallingObject.color = color(0,128,128);
   fallingObject.vel.y = 2;
+  fallingObject.rotationLock = true;
 }
 
 /* DRAW LOOP REPEATS */
@@ -81,4 +82,6 @@ function draw() {
   fill(0, 128, 128);
   textSize(25);
   text("Score = " + score, 15, 35);
+
+  // allSprites.debug = mouse.pressing();
 }

@@ -83,21 +83,21 @@ function showScreen1() {
   enterButton.pos = { x: -100, y: -100 };
 
   // Add A1 button
-  a1Button.pos = { x: width / 2 - 50, y: height / 2 + 100 };
+  a1Button.pos = { x: width / 2 - 120, y: height / 2 + 100 };
   a1Button.w = 160;
   a1Button.h = 50;
   a1Button.collider = "k";
-  a1Button.color = "plum";
+  a1Button.color = "dodgerblue";
   a1Button.text = "Open the newest file";
   a1Button.text.color = "black";
   a1Button.text.size = 14;
 
   // Add A2 button
-  a2Button.pos = { x: width / 2 + 50, y: height / 2 + 100 };
+  a2Button.pos = { x: width / 2 + 120, y: height / 2 + 100 };
   a2Button.w = 160;
   a2Button.h = 50;
   a2Button.collider = "k";
-  a2Button.color = "plum";
+  a2Button.color = "dodgerblue";
   a2Button.text = "Delete the folder";
   a2Button.text.color = "black";
   a2Button.text.size = 14;
@@ -111,21 +111,21 @@ function showScreen2() {
   a2Button.pos = { x: -50, y: -50 };
 
   // Add B1 button
-  b1Button.pos = { x: width / 2 - 50, y: height / 2 + 100 };
+  b1Button.pos = { x: width / 2 - 120, y: height / 2 + 100 };
   b1Button.w = 220;
   b1Button.h = 50;
   b1Button.collider = "k";
-  b1Button.color = "plum";
+  b1Button.color = "dodgerblue";
   b1Button.text = "Follow the location";
   b1Button.text.color = "black";
   b1Button.text.size = 14; 
 
   // Add B2 button
-  b2Button.pos = { x: width / 2 + 50, y: height / 2 + 100 };
-  b2Button.w = 160;
+  b2Button.pos = { x: width / 2 + 120, y: height / 2 + 100 };
+  b2Button.w = 220;
   b2Button.h = 50;
   b2Button.collider = "k";
-  b2Button.color = "plum";
+  b2Button.color = "dodgerblue";
   b2Button.text = "Ignore the message";
   b2Button.text.color = "black";
   b2Button.text.size = 14; 
@@ -142,7 +142,7 @@ function showScreens3() {
 function showScreen4() {
   background("#0D1117");
   fill("#39FF14");
-  text("You close the file and walk away. \nEverything seems normal… until your laptop suddenly \nturns back on by itself. A single message appears: \n\“You should have listened.\”", width/2, height/2 - 100);
+  text("You close the file and walk away. \nEverything seems normal…until your laptop suddenly \nturns back on by itself. A single message appears: \n\“You should have listened.\”", width/2, height/2 - 100);
   b1Button.pos = { x: -200, y: -200 };
   b2Button.pos = { x: -50, y: -50 };
 }
